@@ -1,3 +1,4 @@
+
 ## 🚀 Features
 
 - Responsive navigation bar (desktop + mobile hamburger menu)
@@ -12,16 +13,17 @@
 
 ## 🧑‍💻 Technologies Used
 
-| Technology | Purpose                        |
-| ---------- | ------------------------------ |
-| HTML5      | Structure of the website       |
-| CSS3       | Styling and layout             |
-| JavaScript | Animation and interactivity    |
+| Technology | Purpose |
+|------------|---------|
+| HTML5      | Structure of the website |
+| CSS3       | Styling and layout |
+| JavaScript | Animation and interactivity |
 | Typed.js   | Typing animation for job title |
-| FormSubmit | Contact form handling          |
-| GitHub     | Hosting & code versioning      |
+| FormSubmit | Contact form handling |
+| GitHub     | Hosting & code versioning |
 
 ---
+
 
 ## 📬 Contact
 
@@ -29,6 +31,13 @@ If you'd like to collaborate or have any questions, feel free to connect:
 
 - 💌 Email: [mmaitri1805@gmail.com](mailto:mmaitri1805@gmail.com)
 - 💻 GitHub: [https://github.com/maitri1805](https://github.com/maitri1805)
+
+---
+
+## 🌍 Live Demo
+
+If hosted with **GitHub Pages** or any platform, link it here:
+👉 https://github.com/maitri1805/portfolio
 
 ---
 
