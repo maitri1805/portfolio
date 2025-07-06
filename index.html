@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maitri - Web Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Maitri's portfolio</div>
+
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu for large screens -->
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projects">PROJECT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+            <!-- Mobile menu -->
+            <ul class="menu-mobile" id="mobileMenu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projects">PROJECT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Maitri</span>
+                <div>I am a passionate </div>
+                <span id="element"></span>
+
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Web Developer', 'Web Designer'],
+                        typeSpeed: 50,
+                        backSpeed: 40,
+                        loop: true
+                    });
+                </script>
+                <br>
+                <a href="resume.pdf" type="download" target="_blank">
+                    <button class="btn">Download Resume</button>
+                </a>
+            </div>
+            <div class="rightsection">
+                <img src="2.png" alt="Maitri" />
+            </div>
+        </section>
+        <hr />
+        <section class="secondsection" id="about">
+            <h2>About Me</h2>
+            <p>Hi, my name is Maitri. I am a passionate web developer who loves creating websites.
+                I completed my BSc in Information Technology and started learning web development in 2024.
+                I know HTML, CSS, JavaScript, and React. I can create responsive websites that work well on mobile and
+                desktop.
+                I’m currently learning backend development and improving my projects. I want to become a full-stack
+                developer.
+                In my free time, I enjoy designing UI layouts, sketching, and exploring new web designs.</p>
+
+            <h3>Academic Background & Experience</h3>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="study.png" alt />
+                    <div class="vertical-title">Muktajivan High School S.S.C (2019-2020)</div>
+                    <div class="vertical-desc">87.44%</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="study.png" alt />
+                    <div class="vertical-title">Muktajivan High School H.S.C (2020-2022)</div>
+                    <div class="vertical-desc">77.29%</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="study.png" alt />
+                    <div class="vertical-title">Ganpat University B.Sc(IT) (2022-2025)</div>
+                    <div class="vertical-desc">CGPA: 8.28</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="devloper.png" alt />
+                    <div class="vertical-title">Unified Mentor - Internship</div>
+                    <div class="vertical-desc">Full Stack Web Dev (25/06/2025 - 25/09/2025)</div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="thirdsection" id="projects">
+            <h2>Project</h2>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h3> Floorplan to 3D Model Converter Website</h3>
+                    </div>
+                    <div class="vertical-desc">
+                        <p>Upload 2D floorplan image</p>
+                        <p>Detect walls, doors, windows (YOLO + OpenCV)</p>
+                        <p>Convert to 3D model (Blender)</p>
+                        <p>Show on website (React + Three.js)</p>
+                        <p>User can view & download 3D model </p>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h3>Portfolio Website – Maitri</h3>
+                    </div>
+                    <div class="vertical-desc">
+                        <p> About Me section with education & skills</p>
+                        <p>Projects like 2D to 3D Floorplan Converter</p>
+                        <p>Internship & Academic Background</p>
+                        <p>Built with HTML, CSS, JavaScript</p>
+                        <p>Responsive design & clean layout</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <hr />
+        <section class="fourthsection" id="contact">
+            <h2>Contact Me!</h2>
+            <p>I’m a passionate and motivated web developer, currently starting my journey in
+                the world of frontend and backend development. I’m eager to learn, grow, and contribute
+                to real-world projects. Whether you're looking for a fresh perspective, need help with a project,
+                or have an opportunity you'd like to discuss — feel free to reach out. I’d love to connect with you!
+            </p>
+            <div class="form">
+                <form action="https://formsubmit.co/mmaitri1805@gmail.com" method="POST">
+                    <h3>Send Message</h3>
+
+                    <div class="inputbox">
+                        <input type="text" name="name" required="required">
+                        <span>Full name</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <textarea name="message" required="required"></textarea>
+                        <span>Type your Message.</span>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Maitri Prajapati. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/maitri1805" target="_blank">GitHub</a>
+                <a href="https://mail.google.com/mail/?view=cm&to=mmaitri1805@gmail.com" target="_blank">Email Me</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Hamburger toggle
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("show");
+        }
+
+        // Section scroll animation
+        window.addEventListener("scroll", () => {
+            const section = document.querySelector('.secondsection');
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100) {
+                section.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+
+</html>
